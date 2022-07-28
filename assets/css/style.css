@@ -77,7 +77,7 @@ html{
 }
 
 .nav{
-    background-image: url("../images/header.webp");
+    background-image: url("../images/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -134,7 +134,7 @@ html{
 }
 
 .content {
-    background-image: url("../images/body-back.webp");
+    background-image: url("../images/body-back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: grid; 
@@ -241,7 +241,7 @@ html{
 }
 
 footer{
-    background-image: url("../images/header.webp");
+    background-image: url("../images/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
