@@ -4,7 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "gera": "webpack -w"
+    "dev": "webpack -w"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "core-js": "^3.24.0",
-    "regenerator-runtime": "^0.13.9"
+    "css-loader": "^6.7.1",
+    "regenerator-runtime": "^0.13.9",
+    "style-loader": "^3.3.1"
   }
 }
