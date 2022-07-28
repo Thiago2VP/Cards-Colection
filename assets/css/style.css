@@ -134,7 +134,7 @@ html{
 }
 
 .content {
-    background-image: url("../images/body-black.webp");
+    background-image: url("../images/body-back.webp");
     background-repeat: no-repeat;
     background-size: cover;
     display: grid; 
@@ -204,6 +204,42 @@ html{
     display: none;
 }
 
+.grid-colection{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.block{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card{
+    transition: all 0.8s;
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    margin: auto;
+}
+.card:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5)), grayscale(0%);
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5)) grayscale(0%);
+}
+
+.go-home {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.go-home img{
+    margin: 2rem auto 2rem auto;
+    width: 7rem;
+    height: auto;
+}
+
 footer{
     background-image: url("../images/header.webp");
     background-repeat: no-repeat;
@@ -250,6 +286,21 @@ footer p{
     .cardm{
         width: 75vw;
         height: 60vw;
+    }
+    .block{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px){
+    .block{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 400px){
+    .block{
+        grid-template-columns: 1fr;
     }
 }
 
